@@ -1,5 +1,5 @@
 tips = {
- 	1 : 'Keep a journal the most proven method for helping you change old habits into new healthier ones.' ,
+ 	1 : 'Keep a journal the most proven method for helping you change old habits into new healthier ones.',
 	2 : """Plan ahead, this will make all the difference when you come in for dinner. Instead of grabbing whatever is available, you will already havea plan and know ahead of time what healthy foods you plan to eat.""" ,
 	3 : 'Consult an expert: seek the advice of licensed or registered dietitian to help you create a lifestyle plan, rather than a diet that you go on tog0o off.' ,
     4: '''Carry food with you: getting caught without food will sabotage your
