@@ -49,7 +49,7 @@ def setweek(msg):
 
     c.execute("SELECT * FROM subs where chatid = ? " , [chat_id])
     temp = c.fetchall()[0]
-    print temp
+    print("temp")
     if temp[4] == 1 or temp[6] == 1 :
         if temp[4] == 1 :
             c.execute("UPDATE subs SET pregweek = ? where chatid = ? " , [int(msg_text) , chat_id])
@@ -58,14 +58,14 @@ def setweek(msg):
             c.execute("UPDATE subs SET pregweekpending = 0 where chatid = ? " , [chat_id])
             conn.commit()
         elif temp[6] == 1 :
-            print "Select"
+            print("Select")
             weeks = findweek(msg_text)
             c.execute("UPDATE subs SET babyweek = ? where chatid = ? " , [int(weeks) , chat_id])
             sendmsg = "Updated Vaccination Week Schedule Succesfully"
             sendBaby(chat_id)
             c.execute("UPDATE subs SET babyweekpending = 1 where chatid = ? " , [chat_id])
             conn.commit()
-            print weeks
+            print("weeks")
 
     conn.commit()
 
@@ -111,7 +111,7 @@ def new_connection(msg) :
         conn.commit()
 
     c.execute(" SELECT * FROM subs WHERE chatid = ? " , [chat_id]  )
-    print c.fetchall()
+    print("c.fetchall()")
 
 
 def setAge(msg) :

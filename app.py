@@ -34,7 +34,7 @@ def handle(msg):
 
 
     #print 'Got Message : %s' % msg_text
-    print msg
+    print("msg")
 
     if msg_text == '/start' :
         new_connection(msg)
@@ -75,7 +75,7 @@ def handle(msg):
 
 # bot = telepot.Bot('362542537:AAF5EYYsRxLFGvIdZHu_po_1Bb7Wwk_IOvw')
 # bot.message_loop(handle)
-print 'I am listening ...'
+print("I am listening ...")
 
 try:
     table()
