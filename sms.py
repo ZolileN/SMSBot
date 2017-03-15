@@ -13,8 +13,8 @@ import sqlite3
 client = nexmo.Client(key=13bedae9, secret=cca21ed6187c5158)
 # client = TwilioRestClient(account_sid, auth_token)
 
-# nexmo SMS API 
-response = client.send_message({'from': 'Python', 'to': 'YOUR-NUMBER', 'text': 'Hello'})
+# nexmo SMS API
+response = client.send_message({'from': 'Python', 'to': '233507337619', 'text': 'Hello'})
 
 response = response['messages'][0]
 
